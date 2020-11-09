@@ -1,5 +1,6 @@
 import "../styles/index.css";
 import "../styles/globals.css";
+import Nav from '../components/layout/Navigation';
 
 
 import Head from "next/head";
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
         <title>My Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Nav />
       <Component {...pageProps} />
     </>
   );
