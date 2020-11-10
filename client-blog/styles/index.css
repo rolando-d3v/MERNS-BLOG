@@ -14,8 +14,8 @@
 
 
 /* <!-- LINK  NAV PARA NAVIGATION --> */
-.link-nav {
-  @apply flex items-center no-underline;
+.nav-link {
+  @apply flex items-center no-underline py-1;
 }
 
 /*  <!-- component CARD --> */
@@ -24,6 +24,10 @@
 }
 
 
+/* .container {
+ @apply mx-6 py-1 max-w-7xl;
+}
+ */
 
 
 

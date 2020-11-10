@@ -1,10 +1,11 @@
-import styles from "../styles/Home.module.css";
 import Cardx from "../components/Cardx";
 
 export default function Home() {
+
+
   return (
-    <div className={styles.container}>
-      <div className="py-2">
+    <div className='w-full mx-auto px-8 pt-16' >
+      <div className="">
         <h1 className="text-5xl text-center text-accent-1 ">
           Next.js + Tailwind CSS
         </h1>

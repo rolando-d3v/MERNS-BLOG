@@ -1,6 +1,5 @@
 import React from "react";
-
-//     https://miro.medium.com/max/1200/1*Rvs7u_g6dnDTRF-FMY4vsA.png
+import Image from "next/image";
 
 function Cardx() {
   return (
@@ -8,7 +7,7 @@ function Cardx() {
       <div
         className="h-64 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
         style={{
-          backgroundImage: "url(https://tailwindcss.com/img/card-left.jpg)",
+          backgroundImage: "url(/car2.jpg)",
         }}
       ></div>
       <div className="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
@@ -23,7 +22,7 @@ function Cardx() {
           </p>
         </div>
         <div className="flex justify-between ">
-          <div className='flex items-center' >
+          <div className="flex items-center">
             <img
               className="w-10 h-10 rounded-full mr-4"
               src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg"
@@ -35,7 +34,9 @@ function Cardx() {
             </div>
           </div>
           <div className="px-1">
-            <button className="btn bg-blue-400 hover:bg-red-700">Ver mas</button>
+            <button className="btn bg-blue-400 hover:bg-red-700">
+              Ver mas
+            </button>
           </div>
         </div>
       </div>

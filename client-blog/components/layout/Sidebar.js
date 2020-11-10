@@ -1,63 +1,44 @@
 import React from "react";
 import Link from "next/link";
-// import { NavItem, Nav } from "react-bootstrap";
-import {
-  FaIndent,
-  FaOutdent,
-  FaPenSquare,
-  FaSearch,
-  FaTable,
-  FaSignOutAlt,
-} from "react-icons/fa";
-import "./sidebar.scss";
-
-const navList = [
-  { icon: <FaPenSquare />, href: "/preguntas", menu: "Formulario" },
-  { icon: <FaSearch />, href: "/buscar", menu: "Busqueda" },
-  { icon: <FaTable />, href: "/tabla", menu: "Tabla" },
-  { icon: <FaSignOutAlt />, href: "/login", menu: "salir" },
-];
+import { navList, linksDerecho } from "./Navigation";
 
 const SidebarComponent = (props) => {
   return (
     <div className={`sidebar ${props.toggleState ? "sidebar-visible" : ""}`}>
-      <div className="tooglex">
-        {props.toggleState ? (
-          <FaOutdent className="sidebar__close" onClick={props.toggle} />
-        ) : (
-          <FaIndent className="sidebar__close" onClick={props.toggle} />
-        )}
+      <div className='w-full flex justify-center py-6' >
+        <img
+          className="w-40 h-40 mx-2 rounded-full"
+          src="https://pbs.twimg.com/profile_images/885868801232961537/b1F6H4KC_400x400.jpg"
+          alt="logo"
+        />
       </div>
-
-      {props.toggleState ? (
-        <div className="sidebar__menu  ">
-          <ul className="list-unstyled">
-            {navList.map((nav, i) => (
-              <li key={i}>
-                <Link href={nav.href}>
-                  <a>
-                    <span className="mr-3">{nav.icon}</span> {nav.menu}
-                  </a>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : (
-        <div className="sidebarol">
-          <div className="list-rol">
-            <Link className="nav-link" href="/preguntas">
-              <FaPenSquare />
-            </Link>
-            <Link className="nav-link" href="/buscar">
-              <FaSearch />
-            </Link>
-            <Link className="nav-link" href="/tabla">
-              <FaTable />
-            </Link>
-          </div>
-        </div>
-      )}
+      <div className="sidebar__menu  ">
+        <ul className="list-unstyled">
+          {navList.map((nav, i) => (
+            <li key={i}>
+              <Link href={nav.href}>
+                <a className="nav-link py-2">
+                  <span className="mr-3">{nav.icon}</span> {nav.menu}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <hr className="border border-gray-500" />
+      <div className="sidebar__menu">
+        <ul className="list-unstyled">
+          {linksDerecho.map((nav, i) => (
+            <li key={i}>
+              <Link href={nav.href}>
+                <a className="nav-link py-2">
+                  <span className="mr-3">{nav.icon}</span> {nav.menu}
+                </a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
