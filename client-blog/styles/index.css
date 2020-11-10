@@ -1,25 +1,21 @@
 @tailwind base;
 /* estilos base (aplicados a los elementos) */
 
-
 /* aquí van nuestras clases de componentes(extraidos, podemos usar @apply para aplicar estilos de tailwind */
 @tailwind components;
 
-
- /* BOTONES <!-- component --> */
-.btn-blue {
-  @apply bg-blue-500 font-bold py-2 px-6 rounded-full;
-} 
-
-
+/* BOTONES <!-- component --> */
+.btn {
+  @apply bg-blue-500 text-white font-bold py-2 px-6 rounded-full;
+}
+.btn:focus {
+  @apply outline-none;
+}
 
 /* CARD <!-- component --> */
 .card-rol {
   @apply p-4;
 }
 
-
-
 /* nuestras utilidades extra */
 @tailwind utilities;
-

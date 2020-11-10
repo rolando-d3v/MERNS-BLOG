@@ -35,7 +35,7 @@ function Cardx() {
             </div>
           </div>
           <div className="px-1">
-            <button className="btn-blue text-white hover:bg-red-700 focus:outline-none ">Ver mas</button>
+            <button className="btn bg-blue-400 hover:bg-red-700">Ver mas</button>
           </div>
         </div>
       </div>
