@@ -6,7 +6,7 @@ function Cardx() {
   return (
     <div className="max-w-xl w-full lg:flex shadow-lg">
       <div
-        className="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+        className="h-64 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
         style={{
           backgroundImage: "url(https://tailwindcss.com/img/card-left.jpg)",
         }}

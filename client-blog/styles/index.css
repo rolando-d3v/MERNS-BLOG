@@ -12,10 +12,20 @@
   @apply outline-none;
 }
 
-/* CARD <!-- component --> */
+
+/* <!-- LINK  NAV PARA NAVIGATION --> */
+.link-nav {
+  @apply flex items-center no-underline;
+}
+
+/*  <!-- component CARD --> */
 .card-rol {
   @apply p-4;
 }
+
+
+
+
 
 /* nuestras utilidades extra */
 @tailwind utilities;
