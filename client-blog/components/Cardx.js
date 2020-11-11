@@ -21,7 +21,7 @@ function Cardx() {
             exercitationem praesentium nihil.
           </p>
         </div>
-        <div className="flex justify-between text-xs lg:text-base">
+        <div className="flex justify-between text-xs">
           <div className="flex items-center">
             <img
               className="w-10 h-10 rounded-full mr-4"

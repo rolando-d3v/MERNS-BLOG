@@ -1,6 +1,8 @@
 import "../styles/index.css";
 import "../styles/globals.css";
 import "../styles/dex.scss";
+
+
 import React, { useState } from "react";
 import Nav from "../components/layout/Navigation";
 import Sidebar from "../components/layout/Sidebar";
