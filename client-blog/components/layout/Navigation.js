@@ -16,7 +16,7 @@ export const navList = [
 
 export const linksDerecho = [
   { icon: <FaIndent />, href: "/home", menu: "Perfil" },
-  { icon: <FaSignOutAlt />, href: "/", menu: "Salir" },
+  { icon: <FaSignOutAlt />, href: "/tabla", menu: "Salir" },
 ];
 
 export default function Nav(props) {
