@@ -19,15 +19,15 @@
 }
 
 /*  <!-- component CARD --> */
-.card-rol {
+.card {
   @apply p-4;
 }
 
-
-/* .container {
- @apply mx-6 py-1 max-w-7xl;
+/*  <!-- component CONTAINER --> */
+.container-x {
+ @apply mx-auto w-full px-4;
 }
- */
+
 
 
 

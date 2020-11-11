@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 export const navList = [
-  { icon: <FaPenSquare />, href: "/", menu: "Formulario" },
+  { icon: <FaPenSquare />, href: "/formulario", menu: "Formulario" },
   { icon: <FaSearch />, href: "/home", menu: "Busqueda" },
   { icon: <FaTable />, href: "/", menu: "Tabla" },
 ];
