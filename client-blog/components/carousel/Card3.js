@@ -1,19 +1,20 @@
 import React from "react";
-import Image from "next/image";
 
-function Cardx() {
+function Card3({ev}) {
   return (
-    <div className="max-w-xl w-full lg:flex shadow-lg m-2">
+    <div className="w-95 shadow-xl rounded-b-xl m-3 ">
       <div
-        className="h-64 lg:h-auto lg:w-64 flex-none  bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+        className="h-68 bg-cover rounded-t-xl"
         style={{
-          backgroundImage: "url(/car2.jpg)",
+          backgroundImage: `url(${ev.image})`,
         }}
-      ></div>
-      <div className=" border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+      > 
+      </div>
+      {/* CONTENEDOR TEXT */}
+      <div className=" p-4 ">
         <div className="mb-8">
           <div className="text-black font-bold text-xl mb-2">
-            Can coffee make you a better developer?
+            {ev.nombre}
           </div>
           <p className="text-grey-darker text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -30,9 +31,10 @@ function Cardx() {
             />
             <div className="text-sm text-gray-500">
               <p className="leading-none">Jonathan Reinink</p>
-              <p>Aug 18</p>
+              <p>precio:  {ev.precio} $ </p>
             </div>
           </div>
+
           <div className="px-1 ">
             <button className="btn bg-blue-400 hover:bg-red-700">
               Ver mas
@@ -44,4 +46,4 @@ function Cardx() {
   );
 }
 
-export default Cardx;
+export default Card3;

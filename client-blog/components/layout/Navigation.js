@@ -10,12 +10,12 @@ import {
 
 export const navList = [
   { icon: <FaPenSquare />, href: "/formulario", menu: "Formulario" },
-  { icon: <FaSearch />, href: "/home", menu: "Busqueda" },
-  { icon: <FaTable />, href: "/", menu: "Tabla" },
+  { icon: <FaSearch />, href: "/busqueda", menu: "Busqueda" },
+  { icon: <FaTable />, href: "/tabla", menu: "Tabla" },
 ];
 
 export const linksDerecho = [
-  { icon: <FaIndent />, href: "/home", menu: "Perfil" },
+  { icon: <FaIndent />, href: "/", menu: "Perfil" },
   { icon: <FaSignOutAlt />, href: "/tabla", menu: "Salir" },
 ];
 

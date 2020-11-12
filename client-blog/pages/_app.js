@@ -10,6 +10,7 @@ import Sidebar from "../components/layout/Sidebar";
 import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
+  
   const [toggleState, setToggleState] = useState(false);
 
   const toggle = () => {

@@ -1,24 +1,21 @@
 import React from "react";
-import Image from "next/image";
 
-function Cardx() {
+function Card4({ ev }) {
   return (
-    <div className="max-w-xl w-full lg:flex shadow-lg m-2">
+    <div className="w-96 sm:flex shadow-lg m-3 border-4 border-blue-800 hover:border-green-500 rounded-xl ">
       <div
-        className="h-64 lg:h-auto lg:w-64 flex-none  bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden"
+        className=" h-64 sm:h-auto sm:w-64  bg-cover text-center  rounded-l-lg"
         style={{
-          backgroundImage: "url(/car2.jpg)",
+          backgroundImage: `url(${ev.image})`,
         }}
       ></div>
-      <div className=" border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+
+      <div className=" bg-white p-4 flex flex-col justify-between leading-normal rounded-r-xl">
         <div className="mb-8">
-          <div className="text-black font-bold text-xl mb-2">
-            Can coffee make you a better developer?
-          </div>
+          <div className="text-black font-bold text-xl mb-2">{ev.nombre}</div>
           <p className="text-grey-darker text-base">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
+            Voluptatibus.
           </p>
         </div>
         <div className="flex justify-between text-xs">
@@ -30,9 +27,10 @@ function Cardx() {
             />
             <div className="text-sm text-gray-500">
               <p className="leading-none">Jonathan Reinink</p>
-              <p>Aug 18</p>
+              <p>{ev.precio} </p>
             </div>
           </div>
+
           <div className="px-1 ">
             <button className="btn bg-blue-400 hover:bg-red-700">
               Ver mas
@@ -44,4 +42,4 @@ function Cardx() {
   );
 }
 
-export default Cardx;
+export default Card4;

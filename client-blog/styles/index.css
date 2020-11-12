@@ -4,10 +4,6 @@
 /* aquí van nuestras clases de componentes(extraidos, podemos usar @apply para aplicar estilos de tailwind */
 @tailwind components;
 
-/* nuestras utilidades extra */
-@tailwind utilities;
-
-
 
 /* BOTONES <!-- component --> */
 .btn {
@@ -25,7 +21,7 @@
 
 /*  <!-- component CARD --> */
 .card {
-  @apply p-4;
+  @apply p-4 flex flex-wrap;
 }
 
 /*  <!-- component CONTAINER --> */
@@ -34,4 +30,7 @@
 }
 
 
+
+/* nuestras utilidades extra */
+@tailwind utilities;
 

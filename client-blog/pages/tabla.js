@@ -25,6 +25,7 @@ function Tablex() {
                     <th className="px-6 py-3 bg-gray-50"></th>
                   </tr>
                 </thead>
+                
                 <tbody className="bg-white divide-y divide-gray-200">
                   <tr>
                     <td className="px-6 py-4 whitespace-no-wrap">
