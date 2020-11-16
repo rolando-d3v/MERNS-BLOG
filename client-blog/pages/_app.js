@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta key="description" name="description" content="Contactame!" />
         <title>My Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/next33.png" />
       </Head>
       <Nav toggle={toggle} toggleState={toggleState} />
       <Sidebar toggle={toggle} toggleState={toggleState} />
